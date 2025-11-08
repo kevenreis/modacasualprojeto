@@ -1,0 +1,103 @@
+
+
+
+li{font-size :1.10em;
+
+}
+
+   
+a{text-decoration: none;
+color: #fff;
+padding: 20px;
+
+}
+
+ul a:hover{background-color: #ffffff;
+color: #010101;
+border-radius: 20px;
+}
+
+.cabecalho{width: 100%;
+}
+
+
+.nav{
+    width: 90%;
+margin-top:20px ;
+height: 15%;
+display: flex;
+justify-content: center;
+align-items: center;
+float: right;
+padding: 5px;
+}
+
+
+.logo{
+margin-top: 15px;
+border-radius: 10%;
+margin-left: 20px;
+width: 100px;
+}  
+
+
+.rodape img{margin-top: 50px;
+background-position:center ;
+background-repeat: no-repeat;
+width: 100%;}
+
+footer{border: 1px solid #fff;}
+.filho{color: #fff;
+text-align: center;
+line-height: 30px;
+font-size: 30px;}
+
+
+
+/* Altura Fixa para o Carrossel (Ajuste o valor aqui) */
+.carrossel-altura-fixa {
+    /* Define a altura total desejada para o carrossel */
+    height: 1000px; /* <--- EXPERIMENTE ESTE VALOR PRIMEIRO E AJUSTE! */
+}
+
+/* Garante que o contêiner interno e os slides tenham 100% da altura do carrossel pai */
+.carrossel-altura-fixa .carousel-inner,
+.carrossel-altura-fixa .carousel-item {
+    top: 20px;
+    height: 100%;
+    overflow: hidden; /* Corta o excesso se houver */
+}
+
+/* Garante que a imagem preencha o espaço (o ponto-chave) */
+.carrossel-altura-fixa .carousel-item img {
+    /* Garante que a imagem tenha 100% de largura (já definido no HTML com w-100) e 100% de altura do item pai */
+    height: 100%;
+    width: 100%; 
+    
+    /* ESSA PROPRIEDADE É FUNDAMENTAL: Faz a imagem preencher todo o frame (corta as bordas se necessário) */
+    object-fit: cover; 
+    
+    /* Centraliza a parte visível da imagem */
+    object-position: center; 
+}
+
+/* Opcional: Ajuste a legenda para não ser cortada */
+.carrossel-altura-fixa .carousel-caption {
+    bottom: 20px; /* Garante que a legenda não fique muito em baixo */
+}
+
+body{
+    background-color:rgba(0, 0, 0, 0.904);
+}
+
+.card{
+    margin-top: 30px;
+    background-color: black;
+    font-family: fantasy;
+
+}
+
+.tit{
+    color: black;
+}
+
